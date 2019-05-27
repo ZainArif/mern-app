@@ -49,7 +49,7 @@ class App extends Component {
 
 
   componentWillMount() {
-    axios('http:localhost:4000/api/ninja')
+    axios('http://localhost:5000/api/ninja')
       .then(res => {
         const users = res.data;
         let array = Object.values(users);

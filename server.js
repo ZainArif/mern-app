@@ -54,7 +54,7 @@ app.use(function(err,req,res,next){
     // console.log(err);
     res.status(422).send({error: err.message});
 })
-const path = require("path")
+
 
 // ... other app.use middleware 
 app.use(express.static(path.join(__dirname, "client", "build")))

@@ -59,7 +59,7 @@ router.post('/ninja', upload.single('productimage'), function (req, res, next) {
     let ninjaObject = {
         name : req.body.name,
         vote : req.body.vote,
-        image :'http://localhost:4000/'+ req.file.filename
+        image :'http://localhost:5000/'+ req.file.filename
     }
     Ninja.create(ninjaObject).then(function (ninja) {
         // console.log(req.body)
